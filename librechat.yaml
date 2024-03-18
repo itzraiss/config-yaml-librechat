@@ -14,9 +14,6 @@ interface:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
 
-registration:
-  socialLogins: ['discord', 'facebook', 'github', 'google', 'openid']
-
 endpoints:
   custom:
     # ShuttleAI API

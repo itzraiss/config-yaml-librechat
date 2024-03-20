@@ -18,7 +18,7 @@ endpoints:
   custom:
     # ShuttleAI API
     - name: 'ShuttleAI'
-      apiKey: 'user_provided'
+      apiKey: '${SHUTTLEAI_API_KEY}'
       baseURL: 'https://api.shuttleai.app/v1'
       models:
         default:
@@ -95,7 +95,7 @@ endpoints:
 
     # HentAI
     - name: 'HentAI'
-      apiKey: 'user_provided'
+      apiKey: '${HENTAI_API_KEY}'
       baseURL: 'https://api.hentaigpt.xyz/v1'
       models:
         default:
@@ -175,7 +175,7 @@ endpoints:
 
     # NagaAI
     - name: 'NagaAI'
-      apiKey: 'user_provided'
+      apiKey: '${NAGAAI_API_KEY}'
       baseURL: 'https://api.naga.ac/v1'
       models:
         default:
@@ -210,7 +210,7 @@ endpoints:
 
     # Zukijourney
     - name: 'Zukijourney'
-      apiKey: 'user_provided'
+      apiKey: '${ZIKIJOURNEY_API_KEY}'
       baseURL: 'https://zukijourney.xyzbot.net/unf/'
       models:
         default:

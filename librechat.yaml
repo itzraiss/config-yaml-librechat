@@ -99,7 +99,7 @@ endpoints:
     # Zukijourney
     - name: "Zukijourney"
       apiKey: "${ZIKIJOURNEY_API_KEY}"
-      baseURL: "https://zukijourney.xyzbot.net/unf/chat/completions"
+      baseURL: "https://zukijourney.xyzbot.net/v1/chat/completions"
       models:
         default:
           [

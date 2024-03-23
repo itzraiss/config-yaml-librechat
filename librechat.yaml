@@ -21,7 +21,7 @@ endpoints:
   custom:
     # ShuttleAI API
     - name: 'ShuttleAI'
-      apiKey: '"${SHUTTLEAI_API_KEY}"'
+      apiKey: "${SHUTTLEAI_API_KEY}"
       baseURL: 'https://api.shuttleai.app/v1/chat/completions'
       models:
         default:
@@ -152,7 +152,7 @@ endpoints:
 
     # HentAI
     - name: 'HentAI'
-      apiKey: '"${HENTAI_API_KEY}"'
+      apiKey: "${HENTAI_API_KEY}"
       baseURL: 'https://api.hentaigpt.xyz/v1/chat/completions'
       models:
         default:

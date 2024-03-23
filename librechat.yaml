@@ -22,7 +22,7 @@ endpoints:
     # ShuttleAI API
     - name: 'ShuttleAI'
       apiKey: '"${SHUTTLEAI_API_KEY}"'
-      baseURL: 'https://api.shuttleai.app/v1'
+      baseURL: 'https://api.shuttleai.app/v1/chat/completions'
       models:
         default:
           [
@@ -99,8 +99,8 @@ endpoints:
     
     # Zukijourney
     - name: "Zukijourney"
-      apiKey: ""${ZIKIJOURNEY_API_KEY}""
-      baseURL: "https://zukijourney.xyzbot.net/unf/"
+      apiKey: "${ZIKIJOURNEY_API_KEY}"
+      baseURL: "https://zukijourney.xyzbot.net/unf/chat/completions"
       models:
         default: [
           "gpt-3.5-turbo",
@@ -153,7 +153,7 @@ endpoints:
     # HentAI
     - name: 'HentAI'
       apiKey: '"${HENTAI_API_KEY}"'
-      baseURL: 'https://api.hentaigpt.xyz/v1'
+      baseURL: 'https://api.hentaigpt.xyz/v1/chat/completions'
       models:
         default:
           [
@@ -232,8 +232,8 @@ endpoints:
 
     # NagaAI
     - name: 'NagaAI'
-      apiKey: '"${NAGAAI_API_KEY}"'
-      baseURL: 'https://api.naga.ac/v1'
+      apiKey: "${NAGAAI_API_KEY}"
+      baseURL: 'https://api.naga.ac/v1/chat/completions'
       models:
         default:
           [
@@ -268,7 +268,7 @@ endpoints:
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
+      baseURL: "https://openrouter.ai/api/v1/chat/completions"
       models:
         "default": [
           "google/gemma-7b-it:free",

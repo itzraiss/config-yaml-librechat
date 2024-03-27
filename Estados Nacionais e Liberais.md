@@ -1,4 +1,4 @@
-Claro, aqui está um rascunho do texto que você solicitou. Por favor, note que este é um texto gerado por IA e pode precisar de revisão e ajustes para atender às suas necessidades específicas.
+
 
 ---
 
@@ -32,7 +32,3 @@ Em suma, embora os Estados nacionais e liberais possam parecer conceitos distint
 2. Locke, J. (1689). Two Treatises of Government.
 3. Mill, J. S. (1859). On Liberty. London: John W. Parker and Son.
 4. Tilly, C. (1990). Coercion, Capital, and European States, AD 990-1990. Cambridge, MA: Blackwell.
-
-Por favor, note que esta bibliografia é fictícia e foi gerada para fins ilustrativos. Para um trabalho acadêmico, você deve consultar fontes primárias e secundárias relevantes e citá-las corretamente de acordo com o estilo de citação apropriado. 
-
-Espero que isso ajude! Se você precisar de mais assistência, por favor, me avise.

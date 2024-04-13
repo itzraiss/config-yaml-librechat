@@ -4,70 +4,72 @@ cache: true
 fileStrategy: "firebase"
 
 interface:
-  # Privacy policy settings
   privacyPolicy:
-    externalUrl: "https://librechat.ai/privacy-policy"
+    externalUrl: 'https://librechat.ai/privacy-policy'
     openNewTab: true
-
-  # Terms of service
   termsOfService:
-    externalUrl: "https://librechat.ai/tos"
+    externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
 
 registration:
-  socialLogins: ["google", "github", "facebook", "discord", "openid"]
+  socialLogins: ["discord", "facebook", "google", "github", "openid"]
 
 endpoints:
   custom:
     # ShuttleAI API
     - name: "ShuttleAI"
-      apiKey: "${SHUTTLEAI_API_KEY}"
-      baseURL: "https://api.shuttleai.app/v1/chat/completions"
-      models:
-        default:
-          [
-            "shuttle-turbo",
-            "shuttle-1",
-            "shuttle-tools",
-            "gpt-4-turbo-preview",
-            "gpt-4-0125-preview",
-            "gpt-4-1106-preview",
-            "gpt-4-vision-preview",
-            "gpt-4-32k",
-            "gpt-4-32k-0613",
-            "gpt-4-0613",
-            "gpt-4",
-            "gpt-4-bing-turbo",
-            "gpt-4-bing",
-            "gpt-3.5-turbo",
-            "gpt-3.5-turbo-0125",
-            "gpt-3.5-turbo-1106",
-            "gpt-3.5-turbo-0613",
-            "gpt-3.5-turbo-0301",
-            "gpt-3.5-turbo-16k",
-            "gpt-3.5-turbo-16k-0613",
-            "chatgpt",
-            "claude-3-haiku",
-            "claude-3-opus",
-            "claude-3-sonnet",
-            "gemini-pro",
-            "gemini-pro-vision",
-            "palm-2",
+      apiKey: "user_provided"
+      baseURL: "https://api.shuttleai.app/v1"
+      models: 
+        default: [
+          "shuttle-turbo",
+          "shuttle-1",
+          "shuttle-tools",
+          "gpt-4-turbo-preview",
+          "gpt-4-0125-preview",
+          "gpt-4-1106-preview",
+          "gpt-4-vision-preview",
+          "gpt-4-32k",
+          "gpt-4-32k-0613",
+          "gpt-4-0613",
+          "gpt-4",
+          "gpt-4-bing-turbo",
+          "gpt-4-bing",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo-0301",
+          "gpt-3.5-turbo-16k",
+          "gpt-3.5-turbo-16k-0613",
+          "chatgpt",
+          "claude-3-opus",
+          "claude-3-sonnet",
+          "claude-3-haiku-200k",
+          "claude-3-haiku",
+          "claude-2.1",
+          "claude-2.0",
+          "claude-instant-100k",
+          "claude-instant",
+          "gemini-1.5-pro",
+          "gemini-pro",
+          "gemini-pro-vision",
           ]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "shuttle-turbo"
+      titleModel: "gemini-pro"
       summarize: false
-      summaryModel: "shuttle-turbo"
+      summaryModel: "llama-summarize"
       forcePrompt: false
+      dropParams: ["user", "frequency_penalty", "presence_penalty"]
       modelDisplayLabel: "ShuttleAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
+      # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
     # Zukijourney
     - name: "Zukijourney"
       apiKey: "${ZIKIJOURNEY_API_KEY}"
-      baseURL: "https://zukijourney.xyzbot.net/v1/chat/completions"
+      baseURL: "https://zukijourney.xyzbot.net/unf/"
       models:
         default:
           [
@@ -106,48 +108,21 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
-    # OpenRouter.ai
-    - name: "OpenRouter"
-      apiKey: "${OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1/chat/completions"
+    # FreeGPT-4
+    - name: "FreeGPT-4"
+      apiKey: "user_provided"
+      baseURL: "https://api.freegpt4.tech/v1/"
       models:
-        "default": [
-            "openai/gpt-3.5-turbo",
-            "openai/gpt-3.5-turbo-0125",
-            "openai/gpt-3.5-turbo-1106",
-            "openai/gpt-3.5-turbo-16k",
-            "openai/gpt-4-turbo-preview",
-            "openai/gpt-4-1106-preview",
-            "openai/gpt-4",
-            "openai/gpt-4-32k",
-            "openai/gpt-4-vision-preview",
-            "openai/gpt-3.5-turbo-instruct",
-            "google/palm-2-chat-bison",
-            "google/palm-2-codechat-bison",
-            "google/palm-2-chat-bison-32k",
-            "google/palm-2-codechat-bison-32k",
-            "google/gemini-pro",
-            "google/gemini-pro-vision",
-            "gemma/gemma-7b-it",
-            "google/gemma-7b-it:nitro",
-            "anthropic/claude-3-opus",
-            "anthropic/claude-3-sonnet",
-            "anthropic/claude-2",
-            "anthropic/claude-2.1",
-            "anthropic/claude-2.0",
-            "anthropic/claude-1.2",
-            "anthropic/claude-1",
-            "anthropic/claude-instant-1",
-            "anthropic/claude-instant-1.0",
-            "anthropic/claude-instant-1.2",
-            "anthropic/claude-3-opus:beta",
-            "anthropic/claude-3-sonnet:beta",
-            "anthropic/claude-2:beta",
-            "anthropic/claude-2.1:beta",
-            "anthropic/claude-2.0:beta",
-            "anthropic/claude-instant-1:beta",
-            "huggingfaceh4/zephyr-7b-beta",
-            "openchat/openchat-7b",
+        default: [
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "claude",
+          "gemini-pro"
           ]
         fetch: false
       titleConvo: true
@@ -155,4 +130,5 @@ endpoints:
       summarize: false
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
-      modelDisplayLabel: "OpenRouter"
+      modelDisplayLabel: "FreeGPT-4"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"

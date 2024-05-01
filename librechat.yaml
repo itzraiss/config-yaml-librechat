@@ -1,4 +1,4 @@
-version: 1.0.5
+version: 1.0.8
 
 cache: true
 fileStrategy: "firebase"
@@ -12,7 +12,7 @@ interface:
     openNewTab: true
 
 registration:
-  socialLogins: ["discord", "facebook", "google", "github", "openid"]
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 endpoints:
   custom:

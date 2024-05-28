@@ -6,13 +6,13 @@ fileStrategy: "firebase"
 # Speak to Text
 stt:
   openai:
-    url: 'http://https://raisantos-localai.hf.space:8080/v1/audio/transcriptions'
+    url: 'http://https://raisantos-localai.hf.space/v1/audio/transcriptions'
     model: 'whisper'
 
 # Text to Speak
 tts:
   localai:
-    url: 'https://raisantos-localai.hf.space:8080/v1/audio/synthesize'
+    url: 'https://raisantos-localai.hf.space/v1/audio/synthesize'
     voices: ['pt-br-edresson-low.onnx']
     backend: 'piper'
 

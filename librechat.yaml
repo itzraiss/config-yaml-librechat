@@ -1,7 +1,20 @@
-version: 1.0.8
+version: 1.0.9
 
 cache: true
 fileStrategy: "firebase"
+
+# Speak to Text
+stt:
+  openai:
+    url: 'http://https://raisantos-localai.hf.space:8080/v1/audio/transcriptions'
+    model: 'whisper'
+
+# Text to Speak
+tts:
+  localai:
+    url: 'https://raisantos-localai.hf.space:8080/v1/audio/synthesize'
+    voices: ['it-riccardo_fasol-x-low.onnx']
+    backend: 'piper'
 
 interface:
   privacyPolicy:

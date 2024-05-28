@@ -13,7 +13,7 @@ stt:
 tts:
   localai:
     url: 'https://raisantos-localai.hf.space:8080/v1/audio/synthesize'
-    voices: ['it-riccardo_fasol-x-low.onnx']
+    voices: ['pt-br-edresson-low.onnx']
     backend: 'piper'
 
 interface:

@@ -1,20 +1,7 @@
-version: 1.0.9
+version: 1.1.2
 
 cache: true
 fileStrategy: "firebase"
-
-# Speak to Text
-stt:
-  openai:
-    url: 'http://https://raisantos-localai.hf.space/v1/audio/transcriptions'
-    model: 'whisper'
-
-# Text to Speak
-tts:
-  localai:
-    url: 'https://raisantos-localai.hf.space/v1/audio/synthesize'
-    voices: ['pt-br-edresson-low.onnx']
-    backend: 'piper'
 
 interface:
   privacyPolicy:
@@ -27,9 +14,7 @@ interface:
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
-endpoints:
-  custom:
-    # ShuttleAI API
+ # ShuttleAI API
     - name: "ShuttleAI"
       apiKey: "user_provided"
       baseURL: "https://api.shuttleai.app/v1"
@@ -69,24 +54,23 @@ endpoints:
           "gemini-pro-vision",
           "llama-summarize",
           ]
-        fetch: false
+        fetch: true
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "gemini-pro"
+      titleModel: "shuttle-2-turbo"
       summarize: false
-      summaryModel: "llama-summarize"
+      summaryModel: "shuttle-2-turbo"
       forcePrompt: false
-      dropParams: ["user", "frequency_penalty", "presence_penalty"]
+      dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
       modelDisplayLabel: "ShuttleAI"
       # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
-    # Zukijourney
+     # Zukijourney
     - name: "Zukijourney"
-      apiKey: "${ZIKIJOURNEY_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://zukijourney.xyzbot.net/unf/"
       models:
-        default:
-          [
+        default: [
             "gpt-3.5-turbo",
             "gpt-3.5-turbo-1106",
             "gpt-3.5-turbo-0125",

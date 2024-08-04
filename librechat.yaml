@@ -11,19 +11,12 @@ interface:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
 
-speech:
-  tts:
-    elevenlabs:
-      apiKey: '${TTS_API_KEY}'
-      model: 'eleven_multilingual_v2'
-      voices: ['202898wioas09d2', 'addwqr324tesfsf', '3asdasr3qrq44w', 'adsadsa']
-
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 endpoints:
   custom:
-  # ShuttleAI API
+  # GitHubAI API
   - name: "GitHubAI"
     apiKey: "user_provided"
     baseURL: "https://models.inference.ai.azure.com"

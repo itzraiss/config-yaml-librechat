@@ -41,6 +41,7 @@ endpoints:
     forcePrompt: false
     dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
     modelDisplayLabel: "GitHubAI"
+    iconURL: "https://seeklogo.com/images/G/github-copilot-logo-C25AFBDF08-seeklogo.com.png"
   
   # ShuttleAI API
   - name: "ShuttleAI"

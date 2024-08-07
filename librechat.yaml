@@ -33,7 +33,7 @@ endpoints:
     forcePrompt: false
     dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
     modelDisplayLabel: "ChatGPT"
-    iconURL: "https://img.icons8.com/ios/50/FFFFFF/chatgpt.png"
+    iconURL: "https://img.icons8.com/ios/500/FFFFFF/chatgpt.png"
   
   # ShuttleAI API
   - name: "ShuttleAI"

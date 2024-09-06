@@ -16,25 +16,6 @@ registration:
 
 endpoints:
   custom:
-  # GitHubAI API
-  - name: "ChatGPT"
-    apiKey: "user_provided"
-    baseURL: "https://horizontal-corrected-ventures-phentermine.trycloudflare.com/v1/chat/completions"
-    models: 
-      default: [
-        "gpt-4o-mini"
-      ]
-    fetch: true
-    titleConvo: true
-    titleMethod: "completion"
-    titleModel: "gpt-4o-mini"
-    summarize: false
-    summaryModel: "gpt-4o-mini"
-    forcePrompt: false
-    dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
-    modelDisplayLabel: "ChatGPT"
-    iconURL: "https://img.icons8.com/ios/500/FFFFFF/chatgpt.png"
-  
   # ShuttleAI API
   - name: "ShuttleAI"
     apiKey: "user_provided"
@@ -85,44 +66,3 @@ endpoints:
     dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
     modelDisplayLabel: "ShuttleAI"
     # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
-
-  # Zukijourney
-  - name: "Zukijourney"
-    apiKey: "user_provided"
-    baseURL: "https://zukijourney.xyzbot.net/unf/"
-    models:
-      default: [
-        "gpt-3.5-turbo",
-        "gpt-3.5-turbo-1106",
-        "gpt-3.5-turbo-0125",
-        "gpt-3.5-turbo-instruct",
-        "gpt-3.5-turbo-16k",
-        "gpt-4",
-        "gpt-4-32k",
-        "gpt-4-1106-preview",
-        "gpt-4-0125-preview",
-        "gpt-4-vision-preview",
-        "claude",
-        "claude-2",
-        "claude-2.1",
-        "claude-3-opus",
-        "claude-3-haiku",
-        "claude-3-sonnet",
-        "palm-2",
-        "bard",
-        "gemini-pro",
-        "gemini-pro-vision",
-        "text-embedding-ada-002",
-        "text-embedding-3-small",
-        "text-embedding-3-large",
-        "whisper",
-        "translations"
-      ]
-    fetch: true
-    titleConvo: true
-    titleModel: "gpt-3.5-turbo"
-    summarize: false
-    summaryModel: "gpt-3.5-turbo"
-    forcePrompt: false
-    dropParams: ["stream"]
-    iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"

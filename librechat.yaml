@@ -24,6 +24,7 @@ endpoints:
       models:
         default: [
           "codellama/CodeLlama-34b-Instruct-hf",
+          "meta-llama/Meta-Llama-3.1-70B-Instruct",
           "google/gemma-1.1-2b-it",
           "google/gemma-1.1-7b-it",
           "HuggingFaceH4/starchat2-15b-v0.1",

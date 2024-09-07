@@ -85,26 +85,3 @@ endpoints:
       forcePrompt: false
       dropParams: ["user", "frequency_penalty", "presence_penalty", "repetition_penalty"]
       modelDisplayLabel: "ShuttleAI"
-
-      # DEEPNIGHT
-    # https://github.com/brahmai-research/aiforcause
-    # Model list: https://aiforcause.deepnight.tech/models
-    - name: "DEEPNIGHT"
-      apiKey: "sk-free1234"
-      baseURL: "https://aiforcause.deepnight.tech/openai/"
-      models:
-        default: [
-          "gpt-35-turbo",
-          "gpt-35-turbo-16k",
-          "gpt-4-turbo"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-35-turbo"
-      summarize: false
-      summaryModel: "gpt-35-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "DEEPNIGHT"
-      addParams:
-        stream: True
-      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/DEEPNIGHT.png"

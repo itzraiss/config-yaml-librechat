@@ -39,4 +39,25 @@ endpoints:
       titleConvo: true
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
       dropParams: ["top_p"]
+
+      
+     # OpenAI
+    # https://huggingface.co/settings/tokens
+    - name: 'ZickJourney'
+      apiKey: "zu-375d5104b16335d5287908b9d0dc9100"
+      baseURL: 'https://api.zukijourney.com/v1'
+      models:
+        default:
+          - gpt-4-turbo-preview
+          - gpt-4o
+          - gpt-4o-mini
+          - gpt-4o-mini-search-preview
+          - chatgpt-4o-latest
+          - chatgpt-4o-latest-reasoner
+          - gpt-4o-search-preview
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+      modelDisplayLabel: "ChatGPT"
+      
       

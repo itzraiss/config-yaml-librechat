@@ -55,6 +55,7 @@ endpoints:
           - chatgpt-4o-latest
           - chatgpt-4o-latest-reasoner
           - gpt-4o-search-preview
+          - gpt-4.5-preview
         fetch: false
       titleConvo: true
       titleModel: "current_model"

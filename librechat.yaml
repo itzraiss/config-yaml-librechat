@@ -41,14 +41,18 @@ endpoints:
       dropParams: ["top_p"]
 
       
-     # OpenAI
-    # https://huggingface.co/settings/tokens
-    - name: 'OpenRouter'
-      apiKey: "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"
-      baseURL: 'https://openrouter.ai/api/v1'
+         - name: "OpenRouter"
+      # For `apiKey` and `baseURL`, you can use environment variables that you define.
+      # recommended environment variables:
+      apiKey: "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" # NOT OPENROUTER_API_KEY
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default: ["meta-llama/llama-3-70b-instruct"]
         fetch: true
       titleConvo: true
-      titleModel: "current_model"
+      titleModel: "meta-llama/llama-3-70b-instruct"
+      # Recommended: Drop the stop parameter from the request as Openrouter models use a variety of stop tokens.
+      dropParams: ["stop"]
       modelDisplayLabel: "OpenRouter"
       
       

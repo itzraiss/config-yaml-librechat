@@ -24,7 +24,7 @@ endpoints:
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
     - name: "OpenRouter"
-      apiKey: "user_provided"
+      apiKey: "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"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:

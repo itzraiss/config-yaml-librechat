@@ -43,22 +43,12 @@ endpoints:
       
      # OpenAI
     # https://huggingface.co/settings/tokens
-    - name: 'ZickJourney'
-      apiKey: "zu-375d5104b16335d5287908b9d0dc9100"
-      baseURL: 'https://api.zukijourney.com/v1'
-      models:
-        default:
-          - gpt-4-turbo-preview
-          - gpt-4o
-          - gpt-4o-mini
-          - gpt-4o-mini-search-preview
-          - chatgpt-4o-latest
-          - chatgpt-4o-latest-reasoner
-          - gpt-4o-search-preview
-          - gpt-4.5-preview
-        fetch: false
+    - name: 'OpenRouter'
+      apiKey: "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"
+      baseURL: 'https://openrouter.ai/api/v1'
+        fetch: true
       titleConvo: true
       titleModel: "current_model"
-      modelDisplayLabel: "ChatGPT"
+      modelDisplayLabel: "OpenRouter"
       
       
